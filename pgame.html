@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>psychic game</title>
+</head>
+		<div id="game"><h1>psychic game</h1>
+						<h3>wins:</h3>
+						<h3>losses:</h3>
+						<h3 id="gl">your guesses left:</h3>
+						<h3 class="guesses">your guesses so far:</h3>
+		</div>
+			
+
+		<!-- / want the user to guess letter
+		// rules are you get 9 guesses to pick right number
+		// if you guess the wrong letter, it gets chalked up and you lose a guess. 
+		// If you guess the right letter you win a point
+		// If you guess the wrong letter (after 9 tries) you lose a point.
+		// cpu guesses the letter and stores it until the user guesses or doesnt guess it/ -->
+<body>
+	<script type="text/javascript">
+		
+		var options = ["a","b","c","d","e","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+
+		document.onkeyup = function(event) {
+			var userguess = String.fromCharCode(event.keyCode).	
+				toLowerCase();
+				alert("you chose " + userguess);
+			}
+			
+			
+			
+
+			function add(onkeyup) {
+				counter =+1;
+			}
+			
+		
+
+			var computerguess = options[Math.floor(Math.random()*options.length)];
+				document.write(computerguess);
+
+		
+			
+
+		
+
+		
+
+
+	</script>
+</body>
+</html>
